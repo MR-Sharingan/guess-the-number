@@ -41,7 +41,6 @@ function gameover(){
 }
 
 //check function
-console.log(randnum);
 document.querySelector('.check').addEventListener('click',function(){
     checknum = document.querySelector('.guess').value;
     if (!checknum){
@@ -66,7 +65,6 @@ document.querySelector('.again').addEventListener('click',function(){
     document.querySelector('.message').textContent ='Start guessing...';
     document.querySelector('.score').textContent = '20';
     randfun();
-    console.log(randnum);
     score = 20;
 })
 
