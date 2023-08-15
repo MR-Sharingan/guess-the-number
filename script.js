@@ -10,11 +10,12 @@ function randfun(){
 
 //Score Calculator Function
 function scorecalc(){
-    --score
-    document.querySelector('.score').textContent = score;
-    if(score == 0){
-    gameover()
-    };  
+    if(score > 0){
+        --score
+        document.querySelector('.score').textContent = score;
+    }else if( score == 0){
+        gameover()
+    } 
 }
 
 //Highscore Function
