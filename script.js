@@ -19,7 +19,6 @@ function scorecalc(){
 
 //Highscore Function
 function sethighscore(){
-    // console.log(highscore)
     if(score > highscore){
         highscore = score;
         document.querySelector('.highscore').textContent = highscore;
