@@ -11,12 +11,12 @@
     <header>
       <h1>Guess My Number!</h1>
       <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
+      <button class="btn again">again!</button>
       <div class="number">?</div>
     </header>
     <main>
       <section class="left">
-        <input type="number" placeholder="0" class="inputbox"/>
+        <input type="number" placeholder="0" class="inputbox input"/>
         <button class="btn check">Check!</button>
       </section>
       <section class="right">
@@ -25,18 +25,22 @@
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore">0</span>
         </p>
+        <br>
+        <button class="btn open">Change range</button>
       </section>
     </main>
-    <div class="model">
+    <div class="model hidden">
       <div class="header">
         <h1>select range</h1>
-        <span class="btn">&times;</span>
+        <span class="btn closebtn">&times;</span>
       </div>
       <div class="footer">
-        <input type="number" class="inputbox">
+        <input type="number" class="inputbox range" placeholder="50">
+        <span class="btn setrange">&check;</span>
       </div>
     </div>
-    <div class="overlay"></div>
+    <!-- <div class="retry btn hidden">&#8635 Retry</div> -->
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
